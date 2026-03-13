@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 20% 4%;
+    --foreground: 210 40% 95%;
+
+    --card: 220 20% 8%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 217 100% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 12%;
+    --secondary-foreground: 210 40% 95%;
+
+    --muted: 220 20% 12%;
+    --muted-foreground: 215 20% 60%;
+
+    --accent: 217 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 15%;
+    --input: 220 20% 15%;
+    --ring: 217 100% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors for portfolio */
+    --navy: 220 20% 4%;
+    --navy-light: 220 20% 10%;
+    --cyan: 217 100% 55%;
+    --cyan-light: 217 90% 65%;
+    --cyan-glow: 217 100% 70%;
+    --gradient-primary: linear-gradient(135deg, hsl(217 100% 55%), hsl(217 90% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 20% 4%), hsl(220 20% 8%));
+    --gradient-card: linear-gradient(145deg, hsl(220 20% 8%), hsl(220 20% 12%));
+    --shadow-glow: 0 0 40px hsl(217 100% 55% / 0.3);
+    --shadow-card: 0 4px 24px hsl(0 0% 0% / 0.4);
+    --shadow-card-hover: 0 8px 40px hsl(217 100% 55% / 0.2);
+
+    --sidebar-background: 220 20% 6%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 217 100% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 12%;
+    --sidebar-accent-foreground: 210 40% 95%;
+    --sidebar-border: 220 20% 15%;
+    --sidebar-ring: 217 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .bg-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .glass {
+    @apply backdrop-blur-md;
+    background: hsl(220 20% 4% / 0.85);
+  }
+}
