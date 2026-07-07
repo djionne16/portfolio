@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { Monitor, Server, Database, Wrench, GraduationCap } from 'lucide-react';
+import { Monitor, Server, Cpu, Wrench, GraduationCap } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import photoProfile from '@/assets/photo-profile.png';
+import photoProfile from '@/assets/photo-profile.webp';
 
 const AboutSection = () => {
   const { t } = useLanguage();
@@ -20,28 +20,28 @@ const AboutSection = () => {
       icon: Monitor,
       title: t('skills.frontend'),
       description: t('skills.frontend.desc'),
-      technologies: ['HTML/CSS', 'JavaScript', 'ReactJs', 'VueJs'],
+      technologies: ['Next.js', 'React', 'Vue.js 3', 'Angular', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Tailwind'],
       color: 'from-primary to-primary/60',
     },
     {
       icon: Server,
       title: t('skills.backend'),
       description: t('skills.backend.desc'),
-      technologies: ['PHP', 'Laravel', 'Python', 'Java', 'C/C++'],
+      technologies: ['Node.js', 'Express', 'Python', 'Laravel', 'PHP', 'PostgreSQL', 'MongoDB', 'MySQL', 'Prisma ORM', 'API REST'],
       color: 'from-cyan to-cyan/60',
     },
     {
-      icon: Database,
+      icon: Cpu,
       title: t('skills.data'),
       description: t('skills.data.desc'),
-      technologies: ['MySQL', 'noSQL', 'MCD/MLD'],
+      technologies: ['IA Agentique (Claude Code)', 'n8n', 'Gemini API', 'Embeddings (MiniLM/ONNX)', 'Scweet', 'AT Protocol', 'Prompt Engineering'],
       color: 'from-primary to-cyan',
     },
     {
       icon: Wrench,
       title: t('skills.tools'),
       description: t('skills.tools.desc'),
-      technologies: ['Windows Server', 'Méthodes agiles', 'Git','QT Creator'],
+      technologies: ['Git', 'GitHub', 'Docker', 'Scaleway', 'Nginx', 'PM2', 'Stripe', 'Socket.io', 'pytest', 'Agile/Scrum', 'CI/CD'],
       color: 'from-cyan to-primary',
     },
   ];
@@ -84,11 +84,11 @@ const AboutSection = () => {
                      alt="Djonkounda SOUKOUNA"
                     className="w-full h-full object-cover object-top"
                   />
-  </div>
-  <div className="absolute -bottom-3 -right-3 px-3 py-1.5 rounded-full bg-cyan text-navy text-xs font-mono font-bold shadow-lg">
-    {'< Full Stack />'}
-  </div>
-</div>
+                </div>
+                <div className="absolute -bottom-3 -right-3 px-3 py-1.5 rounded-full bg-cyan text-navy text-xs font-mono font-bold shadow-lg">
+                  {'< Full Stack />'}
+                </div>
+              </div>
               </div>
               <div className="flex-1 text-center md:text-left">
                 <p className="text-lg text-foreground/80 leading-relaxed">

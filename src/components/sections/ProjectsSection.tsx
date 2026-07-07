@@ -219,7 +219,7 @@ const ProjectsSection = () => {
   ],
   technologies: ['Node.js', 'MySQL', 'JavaScript (Vanilla)', 'HTML/CSS', 'Architecture Multi-Tenant'],
   type: language === 'fr' ? 'Projet Académique & Professionnel — 2026' : 'Academic & Professional Project — 2026',
-  github: 'https://github.com/ton-depot', // Remplace par ton lien réel
+  github: 'https://github.com/djionne16/MULTI-BOUTIQUE',
   color: 'from-emerald-600 to-teal-400',
   bgColor: 'bg-emerald-950',
 },

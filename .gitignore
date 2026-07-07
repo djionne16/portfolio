@@ -1,1 +1,14 @@
-"node_modules" 
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# Logs
+*.log
+dev.out
+
+# Editor / OS
+.DS_Store
+*.local

@@ -81,9 +81,9 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(217_100%_55%/0.1),transparent_70%)]" />
                 <p className="text-cyan font-mono text-4xl mb-4">{'</>'}</p>
                 <h3 className="text-primary-foreground text-lg font-bold mb-2">Djonkounda SOUKOUNA</h3>
-                <p className="text-cyan text-sm font-medium mb-4">L3 Informatique</p>
+                <p className="text-cyan text-sm font-medium mb-4">Admis en Master Informatique</p>
                 <p className="text-primary-foreground/60 text-xs font-mono">Montbéliard, France</p>
-                <p className="text-primary-foreground/60 text-xs font-mono mt-1">Stage dès mars 2026</p>
+                <p className="text-primary-foreground/60 text-xs font-mono mt-1">Rentrée 2026</p>
                 <p className="text-cyan font-mono text-4xl mt-4">{'</>'}</p>
               </div>
             </motion.div>
@@ -181,7 +181,7 @@ const HeroSection = () => {
                 variant="outline"
                 className="border-cyan/40 text-cyan hover:bg-cyan/10 font-semibold px-8 py-6 text-lg"
               >
-               <a href="/CV_MASTER_Djonkounda_SOUKOUNA.pdf" download>
+               <a href="/CV_Djonkounda_Soukouna.pdf" download>
                   {t('hero.cv')}
                   <Download className="ml-2 w-5 h-5" />
                 </a>

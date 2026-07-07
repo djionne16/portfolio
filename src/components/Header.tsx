@@ -61,7 +61,7 @@ const Header = () => {
 
         <div className="flex items-center gap-2">
           <Button size="sm" asChild className="bg-cyan hover:bg-cyan-light text-navy font-semibold">
-            <a href="/CV_MASTER_Djonkounda_SOUKOUNA.pdf" download>
+            <a href="/CV_Djonkounda_Soukouna.pdf" download>
               <Download className="w-4 h-4" />
               <span className="hidden sm:inline ml-1">{t('hero.cv')}</span>
             </a>
