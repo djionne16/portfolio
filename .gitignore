@@ -12,3 +12,6 @@ dev.out
 # Editor / OS
 .DS_Store
 *.local
+
+# Legacy uncompressed source image (replaced by photo-profile.webp)
+src/assets/photo-profile.png
